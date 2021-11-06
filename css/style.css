@@ -22,8 +22,8 @@ body {
     background-color: var(--primery-white-color );
     color: #212121;
     font-weight: 500;
-    font-size: 14px;
     }
+    
     .list {
         padding: 0;
         margin: 0;
@@ -32,7 +32,6 @@ body {
 
     .section +.section {
         padding-top: 94px;
-        
     }
 
     .container {
@@ -41,9 +40,6 @@ body {
         margin-left: auto;
         padding-left: 20px;
         padding-right: 20px;
-
-
-        outline: 2px solid tomato;
     }
 
     .main-nav {
@@ -54,8 +50,8 @@ body {
     /* logotype */
     .logo{ 
         display: inline-block;
-        margin-left: 93px;
-        margin-right: 215px;
+        margin-left: 215px;
+        margin-right: 93px;
 
         font-family: Raleway;
         font-weight: bold;
@@ -81,21 +77,24 @@ body {
     }
 
     .studio-foot{
-        color: #FFFFFF;
+        color: var(--primery-white-color);
         font-family: Raleway;
         font-weight: bold;
         font-size: 26px;
         line-height: 1.19;
     }
+
     /*  Site navigation */
 
     .site-nav {
         display: flex;
     }
+
     .site-nav .text.current{
         color: var(--accent-color);
     }
-    .item {
+
+    .site-nav .item {
         padding-top: 32px;
         padding-bottom: 32px;
     }
@@ -109,7 +108,7 @@ body {
     }
 
     .address .link + .link{
-        margin-left:50px;
+        margin: left 50px;
     }
 
     .address {
@@ -121,15 +120,13 @@ body {
         color: var(--accent-color);
     }
     .contacts{
-        display: inline-block;
         display: flex;
         padding-top: 32px;
         padding-bottom: 32px;
 
         color: var(--primary-text-color);
     }
-    .contacts + .contacts{
-        margin-right: 215px;
+    .address .link + .link{
         margin-left: 50px;
     }
 
@@ -139,7 +136,6 @@ body {
         display: inline-block;
         border-radius: 4px;
         padding: 10px 32px;
-        margin: 0px 700px 200px 700px;
 
         cursor: pointer;
         font-weight: bold;
@@ -149,14 +145,128 @@ body {
         background-color: var(--accent-color)
     }
 
-     .btn {
+    .hiro .list  .hiro-btn{
+        margin-bottom: 200px;
+    }
+
+     /* projects */
+
+    .hiro{
+         background-color:var(--primery-bg-color) ;
+         text-align: center;
+
+    }
+
+     .hiro-title{
+        margin-bottom: 30px;
+         padding: 200px 452px 0px 452px;
+
+         color: var(--primery-white-color);
+         font-weight: 900;
+         font-size: 44px;
+         line-height: 1.36;
+        
+    }
+
+    .list.features {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 215px;
+        margin-right: 215px;
+    }
+
+    .engaged {
+        display: flex;
+        justify-content: center;
+    }
+
+    .engaged .item + .item {
+        margin-left: 30px;
+    }
+
+    .team {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 94px;
+    }
+
+    .team .item + .item {
+        margin-left: 30px;
+    }
+
+    .section-title {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 50px;
+
+        font-size: 36px;
+        line-height: 1.16; 
+    }
+
+    .text-title {
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
+    .item-text {
+        width: 270px;
+    }
+
+    .item-text +.item-text {
+        padding-left: 31px;
+    }
+
+    .text{
+        margin-top: 0;
+        margin-bottom: 0;
+
+        font-size: 14px;
+        line-height: 1.71;
+        color: var(--primary-text-color);
+    }
+
+    /* Footer */
+
+    .foot{
+        background-color: #2F303A;
+    }
+
+    .foot .logo {
+        margin-right: 0px;
+        margin-bottom: 20px;
+        padding-top: 60px;
+    }
+
+
+    .foot-address{
+        margin-left: 215px;
+        padding-bottom: 60px;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .foot-address .place{
+         color: #FFFFFF;
+    }
+
+
+    /* page two */
+
+     /* filters button */
+
+    .btn {
         display: inline-block;
         border-radius: 4px;
         height: 38px;
         padding: 6px 22px;
 
         cursor: pointer;
-        font-weight: 500;
+        background: #F5F4FA;
+        border-color:  #F5F4FA;
+        font-weight: bold;
         font-size: 16px;
         line-height: 1.87; 
     }
@@ -170,67 +280,30 @@ body {
         background-color: var(--accent-color)
     }
 
-     /* projects */
+    /* portfolio */
 
-    .hiro{
-         background-color:var(--primery-bg-color) ;
-         text-align: center;
+    .portfolio{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 94px;
 
     }
-
-     .hiro-title{
-         color: var(--primery-white-color);
-         font-weight: 900;
-         font-size: 44px;
-         line-height: 1.36;
-         
-         margin-bottom: 30px;
-         padding: 200px 452px 0px 452px;
+    .filters .list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        padding-top: 94px;
         
     }
 
-    .section-title {
-        font-size: 36px;
-        line-height: 1.16; 
-
-        margin-top: 0;
-        margin-bottom: 0px;
-        padding: 94px 668px 50px 668px;
+    .list .button + .button {
+        margin-left: 8px;
     }
 
-    .text-title {
-        font-size: 14px;
-        line-height: 1.14;
-
-        margin-top: 0;
-        margin-bottom: 10px;
+     .portfolio .item  {
+        padding-left: 30px;
     }
-
-    .item-text {
-        display: inline-block;
-        width: 270px;
-    }
-
-    .text{
-        color: var(--primary-text-color);
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .projects{
-         background-color: var(--primery-white-color);
-    }
-
-    /* Footer */
-
-    .foot{
-         background-color: #2F303A;
-    }
-
-    .foot-address{
-        color: rgba(255, 255, 255, 0.6);
-    }
-
-    .foot-address .place{
-         color: #FFFFFF;
+    .portfolio :nth-child(n + 4) {
+        margin-top: 30px;
     }
