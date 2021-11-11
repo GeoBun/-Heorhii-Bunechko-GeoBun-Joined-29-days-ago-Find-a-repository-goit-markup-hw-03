@@ -53,7 +53,6 @@ body {
         justify-items: center;
         margin-right: auto;
         margin-left: auto;
-        margin-top: 94px;
     }
 
     .head-container{
@@ -67,10 +66,9 @@ body {
 
     .main-nav {
         display: flex;
+        align-items: center;
         margin-right: auto;
         margin-left: auto;
-        width: 1600px;
-        align-items: center;
     }
 
     /* logotype */
@@ -87,27 +85,27 @@ body {
 
     .logo .web,
     .foot .web{
-        color: var(--accent-color) ;
         font-family: Raleway;
         font-weight: bold;
         font-size: 26px;
         line-height: 1.19;
+        color: var(--accent-color);
     }
 
     .logo .studio{
-        color:  var(--title-text-color);
         font-family: Raleway;
         font-weight: bold;
         font-size: 26px;
         line-height: 1.19;
+        color:  var(--title-text-color);
     }
 
     .studio-foot{
-        color: var(--primery-white-color);
         font-family: Raleway;
         font-weight: bold;
         font-size: 26px;
         line-height: 1.19;
+        color: var(--primery-white-color);
     }
 
     /*  Site navigation */
@@ -197,8 +195,8 @@ body {
      /* hiro section */
 
     .hiro{
-        min-width: 1600px;
-        min-height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
         text-align: center;
         background-color:var(--primery-bg-color);
     }
@@ -210,7 +208,8 @@ body {
 
     .hiro-title{
         margin-bottom: 30px;
-         padding: 200px 452px 0px 452px;
+        margin-right: 452px;
+        margin-left: 452px;
 
          font-weight: 900;
          font-size: 44px;
@@ -247,6 +246,8 @@ body {
     .team {
         display: flex;
         justify-content: center;
+        margin-top: 94px;
+        background:var(--teem-bg-color);
     }
 
     .team .item .name{
@@ -267,14 +268,6 @@ body {
     .team .item{
         width: 270px;
         background-color: var(--primery-white-color);
-    }
-
-    .team-container{
-        min-width: 1600px;
-        min-height: 648px;
-        padding-top: 94px;
-        padding-bottom: 94px;
-        background:var(--teem-bg-color);
     }
 
     .team .item + .item {
@@ -324,29 +317,25 @@ body {
 
     /* Footer */
 
-    .foot .logo {
-        margin-right: 0px;
+    .foot-logo {
         margin-bottom: 20px;
-        margin-top: 60px;
     }
+
     .foot .link{
         margin-top: 9px;
     }
 
-    .bg{
-        width: 1600px;
-        min-height: 252px;
-        justify-items: center;
+    .foot{
+        padding-top: 60px;
+        padding-bottom: 60px;
         margin-right: auto;
         margin-left: auto;
 
         background-color:  var(--primery-bg-color);
     }
 
-    .bg .address{
-        margin-left: 215px;
-        margin-bottom: 60px;
-
+    .foot .address{
+        margin-top: 20px;
         line-height: 1.71;
     }
 
@@ -361,13 +350,6 @@ body {
 
     /* page two */
 
-    /* main-section */
-
-    .main-container{
-        width: 1200px;
-        margin-right: auto;
-        margin-left: auto;
-    }
 
      /* filters button */
 
@@ -376,17 +358,14 @@ body {
         border-radius: 4px;
         height: 38px;
         padding: 6px 22px;
+        justify-self: center;
 
         cursor: pointer;
         background: #F5F4FA;
-        border-color:  #F5F4FA;
+        border:  none;
         font-weight: bold;
         font-size: 16px;
         line-height: 1.87; 
-    }
-
-    .button {
-        display: inline-block;
     }
 
     .button :hover,
@@ -400,7 +379,6 @@ body {
     .portfolio{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
     }
 
     .portfolio .item{
@@ -409,6 +387,12 @@ body {
         border-bottom: 1px solid #EEEEEE;
         box-sizing: border-box;
     }
+
+    .portfolio :nth-child(3n+2) {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
 
     .filters.list {
         display: flex;
@@ -420,8 +404,6 @@ body {
     .list .button + .button {
         margin-left: 8px;
     }
-
-     
 
     .portfolio :nth-child(n + 4) {
         margin-top: 30px;
