@@ -52,7 +52,6 @@ body {
         text-decoration: none;
     }
     .section {
-        width: 1600px;
         padding-top: 94px;
         padding-bottom: 94px;
         margin-right: auto;
@@ -73,7 +72,7 @@ body {
         margin-left: auto;
     }
 
-    .head.container{
+    .head{
         border-bottom: 1px solid #ECECEC;
     }
 
@@ -242,12 +241,6 @@ body {
         margin-left: 30px;
     }
 
-    .engaged-container{
-        min-width: 1200px;
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
-
     .engaged {
         display: flex;
         justify-content: center;
@@ -257,12 +250,15 @@ body {
         margin-left: 30px;
     }
 
+    .engaged-zero{
+        padding-top: 0;
+    }
+
     /* our team */
 
     .team {
         display: flex;
         justify-content: center;
-        margin-top: 94px;
         background:var(--teem-bg-color);
     }
 
@@ -451,3 +447,5 @@ body {
     .spacing .text-title{
         letter-spacing: 0.06em;
     }
+
+
